@@ -3,86 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>برنامج تحميل الفيديوهات</title>
+    <title>YT Downloader</title>
     <style>
-        /* تصميم عام للصفحة */
         body {
             font-family: Arial, sans-serif;
             text-align: center;
+            margin: 50px;
             background-color: #f4f4f4;
-            color: #333;
-            margin: 0;
-            padding: 0;
         }
-
-        /* شريط العنوان */
-        header {
+        h1 {
+            color: #333;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
             background-color: #007BFF;
             color: white;
-            padding: 20px;
-            font-size: 24px;
-        }
-
-        /* حاوية المحتوى */
-        .container {
-            margin-top: 50px;
-        }
-
-        /* تصميم الزر */
-        .btn {
-            background-color: #28a745;
-            color: white;
-            padding: 15px 30px;
-            font-size: 18px;
             border: none;
-            cursor: pointer;
             border-radius: 5px;
-            margin-top: 20px;
         }
-
-        .btn:hover {
-            background-color: #218838;
-        }
-
-        /* حقل الإدخال */
-        input {
-            padding: 10px;
-            font-size: 16px;
-            width: 80%;
-            max-width: 400px;
-            margin-top: 20px;
+        button:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        🚀 أداة تحميل الفيديوهات من اليوتيوب
-    </header>
+    <h1>مرحبًا بك في YT Downloader</h1>
+    <p>اختر أحد الخيارات أدناه:</p>
 
-    <div class="container">
-        <h2>أدخل رابط الفيديو:</h2>
-        <input type="text" id="videoUrl" placeholder="الصق رابط الفيديو هنا">
-        <br>
-        <button class="btn" onclick="downloadVideo()">تحميل الفيديو</button>
-        <p id="status"></p>
-    </div>
-
-    <script>
-        function downloadVideo() {
-            let url = document.getElementById("videoUrl").value;
-            if (url.trim() === "") {
-                document.getElementById("status").innerHTML = "⚠️ الرجاء إدخال رابط الفيديو!";
-                return;
-            }
-            document.getElementById("status").innerHTML = "✅ يتم التحميل...";
-            
-            // استبدل هذا السطر بكود يرسل الرابط إلى سكريبت بايثون لديك
-            setTimeout(() => {
-                document.getElementById("status").innerHTML = "🎉 تم التحميل بنجاح!";
-            }, 3000);
-        }
-    </script>
+    <button onclick="alert('تحميل الفيديو قيد التنفيذ!')">تحميل فيديو</button>
+    <button onclick="alert('فتح التعليمات')">تعليمات الاستخدام</button>
 
 </body>
 </html>
